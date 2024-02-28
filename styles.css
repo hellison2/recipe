@@ -1,0 +1,496 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End CSS Reset */
+
+
+/*essential jumbo*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+    background-color: rgba(122, 191, 191, .5);
+}
+
+body {
+    background-color: #F2F2F2;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*fonts&stuff*/
+h1 {
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    display: none;
+}
+
+h2 {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 25px;
+}
+
+nav a, nav span, menu li, #social li, footer {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+p, dd, li, nav, input {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+dt {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/*navigation*/
+nav {
+    padding: 20px;
+}
+
+nav h2 {
+    display: none;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+#mainnav h1 {
+    display: none;
+}
+
+#mainnav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#mainnav img {
+    width: 50%;
+}
+
+.navimg {
+    text-align: center;
+}
+
+.navimg img {
+    display: block;
+    margin: 0 auto;
+}
+
+.navimg span {
+    display: block;
+    text-align: center;
+}
+
+
+/*sections*/
+#searchbar {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 30px;
+}
+
+#searchbar input[type="text"] {
+    padding: 9.5px;
+    width: 300px;
+    border: 2px solid #EB5428;
+}
+
+#searchbar button {
+    background-color: #EB5428;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#searchbar svg {
+    stroke: #ffffff;
+    width: 75%;
+}
+
+#tacos {
+    display: grid;
+    grid-template-columns: 1fr 4fr 5fr;
+    padding-top: 20px;
+}
+
+#tacos img {
+    width: 100%;
+}
+
+#tacos nav {
+    background-color: #ffffff;
+    border: 2px solid #EB5428;
+}
+
+#tacos p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 20px;
+    line-height: 30px;
+}
+
+.tacosimg {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.tacosimg img {
+    display: block;
+    margin: 0 auto;
+}
+
+.tacosimg span {
+    display: block;
+    text-align: center;
+}
+
+.tacosimg a {
+    text-decoration: none;
+    color: #EB5428;
+}
+
+#prep {
+    background-color: #000000;
+    color: #7ABFBF;
+    padding: 10px;
+}
+
+#details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 25px;
+}
+
+#details dl {
+    text-align: center;
+}
+
+#ingredients-directions {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    line-height: 30px;
+    padding: 20px;
+}
+
+#ingredients-directions h2 {
+    padding-bottom: 20px;
+}
+
+#ingredients-directions ul, #ingredients-directions ol {
+    list-style: initial;
+}
+
+#sidedish1 {
+    background-color: #7ABFBF;
+    padding-top: 10px;
+}
+
+#sidedish2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+.recipe h3, .salsa h3 {
+    padding: 10px;
+}
+
+.recipe dt, .salsa dt {
+    font-weight: 400;
+    padding: 10px;
+}
+
+.recipe dd, .salsa dd {
+    font-weight: 700;
+    padding: 10px;
+}
+
+.recipe dd svg:nth-child(-n+4) {
+    fill: #EB5428;
+}
+
+.salsa dd svg {
+    fill: #EB5428;
+}
+
+#connect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+#connect h2, #connect h3 {
+    display: none;
+}
+
+#connect img {
+    width: 25%;
+    padding-top: 20px;
+    float: left;
+}
+
+footer p {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+    top: 40px;
+}
+
+#social1 ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.social2 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.social2 img {
+    display: block;
+    margin: 0 auto;
+}
+
+.social2 span {
+    display: block;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.social2 a {
+    text-decoration: none;
+    color: #EB5428;
+}
+
+/*media queries*/
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+    #streettacos h2 {
+        text-align: left;
+    }
+
+    #tacos {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+    
+    #tacos ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #tacos nav {
+        background-color: #ffffff;
+        border: 2px solid #EB5428;
+        width: 100%;
+    }
+
+    #prep {
+        background-color: #F2F2F2;
+        color: #000000;
+    }
+
+    #details {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    #details dl {
+        display: flex;
+        text-align: center;
+    }
+
+    #details dt {
+        padding-right: 20px; 
+    }
+    
+    #sidedish2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 20px;
+    }
+
+    .recipe {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 20px;
+    }
+
+    .salsa {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 20px;
+    }
+    
+    .recipe img, .salsa img{
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 414px) {
+    #streettacos h2 {
+        text-align: center;
+    }
+
+    #tacos {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+    
+    #tacos ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #tacos nav {
+        background-color: #ffffff;
+        border: 2px solid #EB5428;
+        width: 100%;
+    }
+
+    #prep {
+        background-color: #F2F2F2;
+        color: #000000;
+    }
+
+    #details {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: left;
+    }
+
+    #details dl {
+        display: flex;
+        text-align: left;
+        padding: 5px;
+    }
+
+    #details dt {
+        padding-right: 20px; 
+    }
+
+    #ingredients-directions {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 30px;
+        padding: 20px;
+    }
+    
+    #sidedish2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .recipe {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 20px;
+    }
+
+    .salsa {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 20px;
+    }
+    
+    .recipe img, .salsa img{
+        width: 100%;
+    }
+
+    #connect {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+    footer p {
+        position: relative;
+        top: 150px;
+        right: 100px;
+    }
+}
